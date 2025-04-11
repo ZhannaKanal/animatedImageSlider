@@ -1,0 +1,1 @@
+https://animatedimageslider.netlify.app/
