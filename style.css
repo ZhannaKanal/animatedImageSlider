@@ -79,7 +79,7 @@ a:hover {
   opacity: 0;
 }
 
-.item .content {
+.list .item .content {
   position: absolute;
   top: 50%;
   left: 100px;
@@ -184,32 +184,31 @@ a:hover {
   font-size: 16px;
   font-family: monospace;
   font-weight: bold;
-  transition: 0.5s;
+  transition: .5s;
   cursor: pointer;
 }
 .arrows button:hover {
   background: #fff;
   color: #000;
 }
-/* .carousel .timeRunning {
-  position: absolute;
-  z-index: 1000;
+
+ .timeRunning {
+  background-color: #14ff72cb;
   width: 0%;
   height: 4px;
-  background-color: #14ff72cb;
-  left: 0;
+  position: absolute;
+  z-index: 1000;
   top: 0;
+  left: 0;
   animation: runningTime 7s linear 1 forwards;
-} */
-/* 
+ }
+
 @keyframes runningTime {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-} */
+  
+  from{width: 0%;}
+  to{width: 100%;}
+
+}
 
 @media screen and (max-width: 999px) {
   header {

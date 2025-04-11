@@ -29,8 +29,8 @@ function resetTimeAnimation(){
 }
 
 function showSlider(type) {
+    let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
     if (type == 'next'){
-        let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
         list.appendChild(sliderItemsDom[0])
         carousel.classList.add('next')
     } else {
@@ -43,7 +43,7 @@ function showSlider(type) {
     runTimeOut = setTimeout(() => {
         carousel.classList.remove('next')
         carousel.classList.remove('prev') 
-    }, timeAutoNext)
+    }, timeRunning)
 
 
     clearTimeout(runNextAuto)
